@@ -1,0 +1,41 @@
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+}
+.foot_right ,
+.foot_left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+
+}
+.foot_right {
+  justify-content: space-between;
+}
+.foot_left {
+  justify-content: flex-end;
+}
+.foot_left svg{
+  margin-right: 15px;
+  font-size: 24px;
+}
+.foot_right .foot_r_num ,
+.foot_right .foot_r_email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot_right .foot_r_num i,
+.foot_right .foot_r_email i{
+  margin-right: 10px;
+}
+.foot_left i img {
+  width: 5px;
+  color: #FFFFFF;
+  font-size: 12px;
+}

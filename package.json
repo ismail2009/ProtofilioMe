@@ -1,0 +1,60 @@
+{
+  "name": "protofiliome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node ./src/index.js",
+    "clean": "rimraf public/bundle.js",
+    "heroku-postbuild": "webpack -p --config webpack.config.js --progress",
+    "dev:start": "nodemon --exec babel-node  ./src/index.js ",
+    "dev:build": "npm run clean && webpack --mode development && sw-precache  --config=sw-precache-config.js",
+    "prod:build": "npm run clean && webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismail2009/ProtofilioMe.git"
+  },
+  "author": "Ismail2009",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismail2009/ProtofilioMe/issues"
+  },
+  "homepage": "https://github.com/ismail2009/ProtofilioMe#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "nodemon": "^1.17.5",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "css-loader": "^0.28.10",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.11",
+    "pre-commit": "^1.2.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  }
+}

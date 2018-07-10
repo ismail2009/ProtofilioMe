@@ -1,0 +1,19 @@
+.header_title {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: linear-gradient(155.58deg, rgba(132, 144, 255, 0.99) -6.95%,
+  rgba(118, 162, 254, 0.935099) 36.77%, rgba(117, 164, 254, 0.929698) 41.08%,
+  rgba(112, 170, 253, 0.947646) 55.52%, rgba(109, 175, 253, 0.961655) 66.79%,
+  rgba(106, 178, 253, 0.970925) 74.24%, rgba(100, 186, 252, 0.99339) 92.32%,
+  #63BCFC 97.63%, #63BCFC 97.64%, #62BDFC 100%, #62BDFC 100%);
+}
+.header_title h1 {
+  margin: 0
+}
+.about_slid_hero {
+  width: 500px;
+  height: 500px;
+}

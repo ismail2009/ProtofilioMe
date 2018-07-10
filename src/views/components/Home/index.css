@@ -1,0 +1,105 @@
+.home_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000000;
+  min-height:400px;
+  align-items: center;
+}
+.home_content .home_slid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+.home_content .home_slid .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+.home_hero {
+  width: 400px;
+  height: 500px;
+}
+.home_content .container h3{
+  font-size: 21px;
+}
+.home_content .container h4 {
+  font-size: 14px;
+  margin-bottom: 18px !important;
+}
+.home_content .container h4 ,
+.home_content .container h3 {
+  margin: 0;
+}
+.home_content .container h3,.home_content .container h1 {
+  text-transform: uppercase;
+}
+.discription {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 180px
+}
+.discription h4 {
+  margin-top: 0;
+}
+.home_content_hire {
+  width: 250px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  background-color: #4bce49;
+}
+
+.slid_btn,
+.space-box {
+  display: flex;
+  flex: 0.6;
+}
+.slid_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 20px;
+}
+.btn {
+  width: 20px;
+  background-color: #BDBDBD;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.slid_btn_descover {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(155.58deg,
+     rgba(132, 144, 255, 0.99) -6.95%,
+     rgba(118, 162, 254, 0.935099) 36.77%,
+     rgba(117, 164, 254, 0.929698) 41.08%,
+     rgba(112, 170, 253, 0.947646) 55.52%,
+     rgba(109, 175, 253, 0.961655) 66.79%,
+     rgba(106, 178, 253, 0.970925) 74.24%,
+     rgba(100, 186, 252, 0.99339) 92.32%,
+     #63BCFC 97.63%, #63BCFC 97.64%,
+     #62BDFC 100%, #62BDFC 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slid_btn_descover a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.md-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.md-2 {
+  width: 40%;
+}
