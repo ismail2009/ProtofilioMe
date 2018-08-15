@@ -3,11 +3,12 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 56px;
+  height: 53px;
   background-color: #000000;
   color: #fff;
   font-family:'Roboto', sans-serif ,"Montserrat";
   font-size: 14px;
+  position: relative;
 }
 .Navbar_nav {
   display: flex;
@@ -17,6 +18,10 @@
 .Navbar .container {
   display: flex;
   justify-content: space-between;
+}
+.Navbar_logo {
+  display: flex;
+  align-items: center;
 }
 .Navbar_nav_item span a {
   text-decoration: none;
@@ -36,4 +41,37 @@
 }
 .Navbar_nav .Navbar_nav_item:nth-child(1) span a {
   color: #8490FF !important;
+}
+.burger_btn {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .active {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 53px;
+    z-index: 5;
+    background-color: #000;
+  }
+  .Navbar_nav_item {
+    height: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 0.5px solid #9E9E9E;
+    margin-bottom: 2px;
+  }
+  .Navbar_nav_item:last-child {
+    border-bottom:0;
+  }
+  .burger_btn {
+    display: block;
+    margin-right: 8px;
+    font-size: 32px;
+  }
+  .unactive {
+    display: none
+  }
 }

@@ -4,22 +4,24 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Home from '../Home';
 import About from '../About';
+import Protfolio from '../Protfolio';
+import Service from '../Service';
+import Contact from '../Contact';
 
 const App = () => (
-  <div>
-    <header className="home_header">
-      <div className="outer-container">
-        <Header />
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-          </Switch>
-        </Router>
-      </div>
-    </header>
-    <Footer />
-  </div>
+  <Router>
+    <div className="wrapper">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/protfolio" component={Protfolio} />
+        <Route exact path="/service" component={Service} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
 );
 
 export default App;
