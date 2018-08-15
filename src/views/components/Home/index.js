@@ -13,7 +13,7 @@ const Home = () => (
         <div className="md-1">
           <div className="discription">
             <h4>THIS IS ME</h4>
-            <h3>ISMIAL SALAH AL-SALEH</h3>
+            <h3>ISMAIL SALAH AL-SALEH</h3>
             <p>
                          You will begin to realise why this exercise is called the
                          Dickens Pattern with reference to the ghost showing

@@ -1,0 +1,68 @@
+.protfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.protfolio_items  {
+    display: flex;
+    padding-top: 24px;
+}
+.protfolio_items .container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.protfolio_items .container .proj{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.protfolio_item {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.protfolio_item_highlite {
+    display: none
+}
+.protfolio_item:hover .protfolio_item_highlite {
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background: linear-gradient(
+     129.25deg,
+     rgba(132, 144, 255, 0.72) 21.41%, 
+     rgba(98, 189, 252, 0.57) 100%,
+     rgba(98, 189, 252, 0.57) 100%);
+}
+.protfolio_item_highlite h4 {
+    font-size: 36px;
+    text-align: center;
+}
+.protfolio_item img{
+    width: 100%;
+    height: 300px;
+}
+@media only screen and (max-width: 797px) {
+
+.protfolio_item {
+    width: 45%;
+}
+}
+
+@media only screen and (max-width: 576px) {
+
+.protfolio_item {
+    width: 100%;
+}
+}
+

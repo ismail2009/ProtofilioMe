@@ -2,24 +2,28 @@ html,body {
   margin: 0 auto;
   padding: 0;
   font-family:'Roboto', sans-serif ,"Montserrat";
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box
 }
 #root {
   background-color: #FFFFFF;
+  height: 100%;
 }
 .container {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
-
-.home_header{
+.wrapper {
   width: 100%;
-  background-color: #FFFFFF;
-  min-height: 595px;
-}
-.outer-container {
-  min-height: 595px;
-  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

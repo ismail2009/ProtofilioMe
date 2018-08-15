@@ -11,9 +11,61 @@
   #63BCFC 97.63%, #63BCFC 97.64%, #62BDFC 100%, #62BDFC 100%);
 }
 .header_title h1 {
-  margin: 0
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
 }
 .about_slid_hero {
-  width: 500px;
+  width: 100%;
   height: 500px;
+}
+.about_detail {
+    font-family:'Roboto', sans-serif ,"Montserrat";
+}
+.about {
+  height: 400px !important;
+}
+ .about_slid .container {
+  display: flex;
+}
+.about_slid .md-1 {
+  width: 40%;
+}
+.about_slid .md-2 {
+  width: 60%;
+}
+.about_slid_hero {
+  height: 100%;
+}
+@media only screen and (max-width: 768px){
+  .about {
+    height: 500px !important;
+  }
+  .about_slid .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about_slid .md-1 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+    .about_slid .md-1 h4,
+    .about_slid .md-1 h3,
+    .about_slid .md-1 p {
+      margin: 0;
+    }
+  .about_slid .md-2 {
+    width: 80%;
+  }
+  .about_detail .container {
+    display: flex;
+    justify-content: center;
+  }
+  .about_detail .container {
+    width: 80%;
+  }
+
 }
