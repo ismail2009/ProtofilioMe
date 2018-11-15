@@ -22,6 +22,6 @@ app.use(bodyParser.json())
       error: {},
     });
   })
-  .set('port', PORT || 4000);
+  .set('port', PORT || 8080);
 
 module.exports = app;

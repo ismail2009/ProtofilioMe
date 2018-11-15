@@ -1,8 +1,9 @@
 footer {
   display: flex;
-  height: 53px;
+  /* height: 53px; */
   background-color: #000000;
   color: #FFFFFF;
+  padding: 8px;
 }
 footer .container {
   display: flex;
@@ -13,7 +14,7 @@ footer .container {
   display: flex;
   align-items: center;
   width: 50%;
-  height: 50px;
+  /* height: 50px; */
 
 }
 .foot_right {
@@ -40,4 +41,16 @@ footer .container {
   width: 5px;
   color: #FFFFFF;
   font-size: 12px;
+}
+@media only screen and (max-width: 768px) {
+  .foot_right {
+    flex-direction: column;
+    justify-content: flex-end;
+    }
+   .foot_r_num,
+   .foot_r_email {
+      width: 50%;
+      margin: 5px 0;
+    }
+    
 }
