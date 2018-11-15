@@ -54,3 +54,19 @@ footer .container {
     }
     
 }
+
+@media only screen and (max-width: 548px) {
+  footer .container {
+    flex-direction: column;
+  }
+  .foot_right ,
+  .foot_left {
+    width: 100%;
+  }
+  .foot_r_num {
+    justify-content: flex-start !important;
+  }
+  .foot_left {
+    justify-content: center;
+  }
+}
