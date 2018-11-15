@@ -6,7 +6,7 @@ const HeaderTitle = ({ title }) => (
     <h1>{title}</h1>
   </div>
 );
-HeaderTitle.propTypes = {
-  title: PropTypes.string
-}
+// HeaderTitle.propTypes = {
+//   title: PropTypes.string
+// }
 export default HeaderTitle;
