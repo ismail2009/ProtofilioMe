@@ -1,7 +1,25 @@
 {
-    "extends": "airbnb",
-    "rules": {
-  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-  "react/jsx-one-expression-per-line": "none"
-}
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended"
+  ],
+    "settings": {
+      "react": {
+        "createClass": "createReactClass",
+        "pragma": "React",  
+        "version": "16.2.0"
+
+      },
+      "propWrapperFunctions": [ "forbidExtraProps" ]
+    },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "import",
+    "react"
+  ]
 }

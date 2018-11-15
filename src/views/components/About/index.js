@@ -25,7 +25,7 @@ const About = () => (
               </p>
             </div>
             <div className="slid_btn_descover">
-              <a href="#">VIEW MORE DETAILS</a>
+              <a href="#main">VIEW MORE DETAILS</a>
             </div>
           </div>
 
